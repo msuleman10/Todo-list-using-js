@@ -1,0 +1,92 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+.hello{
+    border: 10px solid black;
+    height: 100vh;
+    background-image: url(./wallhaven-3krw39.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    padding: 30px 0px 20px 0px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+}
+#inputFeeld , #add{
+    font-size: 1.3rem;
+    padding: 10px;
+}
+.remove{
+    margin-right: 15px;
+    padding: 3px 5px 3px 5px;
+    float: right;
+    width: 27px;
+    height: 25px; 
+}
+.edit{
+    margin: 0px 15px 0px 20px;
+    padding: 4.5px 6px 4.5px 6px;
+    float: right;
+}
+.abc{
+    max-height: 60vh;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.5);
+    border: 2px solid black;
+    text-align: left;
+    padding: 20px 10px 10px 50px;
+    margin-top: 20px;
+    list-style-type: circle;
+}
+.type input{
+    margin-bottom: 20px;
+}
+li{
+    margin-bottom: 20px;
+    font-size: 20px;
+ 
+}
+#add{
+   border: 0.5px solid black;
+    border-left: none;
+}
+ #inputFeeld{
+    border: 0.5px solid black;
+    border-right: none;
+} 
+@media screen and  (max-width:550px) {
+    #container{
+        align-items: center;
+        width:80%;
+    }
+    li{
+        width: 100%;
+    }
+}
+@media screen and  (max-width:450px) {
+    #container{
+        flex-direction: column;
+        align-items: center;
+    }
+     .abc{
+       width: 200px;
+    } 
+    li{
+       font-size: 15px;
+    }
+}
